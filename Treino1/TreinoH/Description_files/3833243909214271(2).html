@@ -1,0 +1,126 @@
+
+<!-- saved from url=(0070)https://mooshak.dei.uc.pt/~lpa/cgi-bin/execute/3833243909214271?view+H -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="base.css" type="text/css">
+</head>
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+<title>Problem A - Zé Manel plays with deterministic finite automata</title>
+
+
+<h1 align="CENTER">Problem A - Zé Manel plays with deterministic finite automata</h1>
+
+<hr>
+
+<h2>Description</h2>
+
+<p> While attending a lecture of Theory of Computation about 
+finite state machines, Zé Manel decided to make a game based on the topic of
+deterministic finite automata. </p><p>
+
+Do you remember what a deterministic finite automaton is? 
+It consists of</p><p>
+
+</p><ul>
+<li>  a finite set of states <i>Q</i>
+</li><li>  a finite set of input symbols called the alphabet (&#931;)
+</li><li>  a transition function (&#948; : <i>Q</i> × &#931; &#8614; <i>Q</i>)
+</li><li>  a start state (<i>q0</i> &#8712; <i>Q</i>)
+</li><li>  a set of accept states (<i>F</i> &#8838; <i>Q</i>)
+</li></ul>
+
+A automaton accepts a given string of size <i>m</i> if and only if there exists 
+a sequence of <i>m</i> transitions between the states in <i>Q</i> such that<p>
+
+</p><ul>
+<li> the first state is <i>q0</i>
+</li><li> given each symbol of the string, the machine will transition from state to state according to 
+	function &#948;
+</li><li>  the last symbol of the string will cause the machine to halt in one of the accept states
+</li></ul>
+ 
+
+Zé Manel defined a deterministic finite 
+automaton where <i>Q = {1,2, ..., n}</i>, <i>&#931; = {0,1}</i> and <i>q0 = 1</i> 
+and <i>&#948;</i> is given by a state transition table. Then, the goal is to count  how many distinct strings of size <i>m</i> exist that can be accepted by the automaton.<p>
+
+
+A graphical example of a deterministic finite automaton with <i>n=5</i> and <i>F = {3}</i> 
+is given in the figure below, with nodes for states, and arcs for transitions. 
+Each node has two outgoing arcs, corresponding to the symbols 0 and 1, respectively.
+For such example there exist 2 strings of size 3 that can be accepted 
+by the automaton: 010 and 111. But for size 20, there exist 
+209715 such strings!</p><p>
+
+<img src="3833243909214271" height="250pt"></p><p>
+
+</p><hr>
+
+<h2>Input</h2> 
+
+<p>The first line indicates the number of states and the size of the strings.
+Then, the transition table is
+given in the following <i>n</i> lines. The <i>i</i>-th line has at least two integers, 
+corresponding to the two states that are reachable from state <i>i</i> for symbols 0 and 1, respectively.
+If state <i>i</i> is an accept state, then <i>i</i>-th line ends with symbol <i>*</i>.
+Other test cases may follow.
+</p><p>
+
+</p><hr>
+
+<h2>Output</h2>
+<p>
+For each test case, print the number of strings can be accepted by the automaton. Note that there may be more than one accept state.</p><p> 
+</p><hr>
+
+
+<h2>Constraints</h2>
+<p>
+</p><ul> 
+<li><i>1 &#8804; n &#8804; 20</i>
+</li><li> <i>1 &#8804; m &#8804; 30</i>
+</li></ul>
+
+<hr>
+
+<h2> Example</h2>
+
+<p><b>Example input:</b></p>
+
+<blockquote><pre>5 20
+1 2
+3 4
+5 1 *
+2 3
+4 5
+5 3
+1 2
+3 4
+5 1 *
+2 3
+4 5
+</pre></blockquote>
+
+<hr>
+
+<p><b>Example output:</b></p>
+
+<blockquote><pre>209715
+2
+</pre></blockquote>
+
+<hr>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</center>
+
+
+</body></html>
