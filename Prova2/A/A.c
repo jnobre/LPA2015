@@ -46,8 +46,7 @@ void calc()
 			conta++;
 			j = i;
 		}
-	}
- 
+	} 
 }
 
 int main()
@@ -56,7 +55,6 @@ int main()
 
 	while(scanf("%d",&num_reunioes) != EOF)
 	{
-
 		for(i = 0 ; i < num_reunioes ; i++)
 		{
 			reunioes[i].verificado = 48;
