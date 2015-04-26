@@ -44,19 +44,20 @@ O output para cada caso de teste é um só número numa linha, ou "no way" se n�
 ##Exemplo
 
 **Exemplo de input:**
-
-5
-7
-3 8
-8 1 0 
-2 7 -1 4
-4 5 2 6 5
-5
-7
-3 8
--1 -1 0
-2 7 -1 -1
-4 5 2 6 5
+```
+5 
+7 
+3 8 
+8 1 0  
+2 7 -1 4 
+4 5 2 6 5 
+5 
+7 
+3 8 	
+-1 -1 0 
+2 7 -1 -1 
+4 5 2 6 5 
+```
 
 **Exemplo de output:**
 
