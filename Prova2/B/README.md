@@ -31,9 +31,13 @@ Cada pista tem um valor inteiro entre -1 e 100.
 Em cada caso de teste a primeira linha indica o número de níveis da montanha. As linhas seguintes contêm a informação do triângulo com os valores alinhados à esquerda, como se segue:
 
 7
+
 3 8
+
 8 1 0 
+
 2 7 -1 4
+
 4 5 2 6 5
 
 ##Output
@@ -47,18 +51,31 @@ O output para cada caso de teste é um só número numa linha, ou "no way" se n�
 
 5
 7
+
 3 8
+
 8 1 0 
+
 2 7 -1 4
+
 4 5 2 6 5
+
 5
+
 7
+
 3 8
+
 -1 -1 0
+
 2 7 -1 -1
+
 4 5 2 6 5
 
 **Exemplo de output:**
 
 20
+
 no way!
+
+
