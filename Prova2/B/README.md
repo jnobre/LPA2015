@@ -19,7 +19,7 @@ O Jocas quer escolher a sequência de pistas a descer a montanha diagonalmente, 
 
 Escreva um programa que calcule a menor soma que o Jocas pode conseguir.
 
-##Restricções
+##Restrições
 
 n ≤ 100.
 
